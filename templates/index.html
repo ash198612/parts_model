@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parts Classifier</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body>
+    <header>   
+        <a class="header-logo" >Parts Classifier</a>
+        <a class="header-right" >External Use Prohibited</a>
+    </header>
+
+    <div class="main">    
+        <h2> AIが選択された図面の部品種類を識別します</h2>
+        <p>図面を選択してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="送信" type="submit">
+        </form>
+        <div class="answer">{{answer}}</div>
+    </div>
+
+    <footer>
+        <small>&copy; 2023 Arademy.</small>   
+    </footer>
+</body>
+</html>
